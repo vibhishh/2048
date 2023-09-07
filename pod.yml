@@ -8,4 +8,4 @@ spec:
     - name: game-app
       image: mradulsingh25/2048-game:latest
       ports:
-        - containerPort: 80
+        - containerPort: 3000
