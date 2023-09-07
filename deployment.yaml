@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 2048-deployment
+  labels:
+    app: 2048-game
+  namespace: 2048
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: 2048-game
+  template:
+    metadata:
+      labels:
+        app: 2048-game
+    spec:
+      containers:
+      - name: 2048-game
+        image: mradulsingh25/2048-game
+        ports:
+        - containerPort: 80 
