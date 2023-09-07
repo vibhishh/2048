@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   name: game-deployment
   labels:
-    app: 2048-game
-  namespace: 2048-game
+    app: 2game-app
+  namespace: gamespace
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: 2048-game
+      app: game-app
   template:
     metadata:
       labels:
-        app: 2048-game
+        app: game-app
     spec:
       containers:
-      - name: 2048-game
+      - name: game-app
         image: mradulsingh25/2048-game
         ports:
         - containerPort: 80 
