@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: game-deployment
   labels:
-    app: 2game-app
+    app: game-app
   namespace: gamespace
 spec:
   replicas: 1
