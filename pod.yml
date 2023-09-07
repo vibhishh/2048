@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: game-app
-  namespace: game-space
+  namespace: gamespace
 spec:
   containers:
     - name: game-app
