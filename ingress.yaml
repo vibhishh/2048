@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: 2048-ingress
+  namespace: 2048
+spec:
+  rules:
+  - host: "mradulsingh2048.com"
+    http:
+      paths:
+        - pathType: Prefix
+          path: "/"
+          backend:
+            service:
+              name: 2048-service
+              port:
+                number: 80
