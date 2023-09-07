@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: 2048-deployment
+  name: game-deployment
   labels:
     app: 2048-game
-  namespace: 2048
+  namespace: 2048-game
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: 2048-game
