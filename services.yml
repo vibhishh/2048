@@ -10,7 +10,7 @@ spec:
     app: game-app
   ports:
     # Port Map
-  - port: 3000
-    targetPort: 3000
+  - port: 6000
+    targetPort: 6000
     protocol: TCP
-  type: LoadBalancer
+  type: NodePort
