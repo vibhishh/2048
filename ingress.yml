@@ -1,8 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: two-zero-four-eight-ingress
-  namespace: 2048-game
+  name: game-ingress
+  namespace: gamespace
 spec:
   rules:
   - host: "mradulsingh2048.com"
@@ -12,6 +12,6 @@ spec:
           path: "/"
           backend:
             service:
-              name: two-zero-four-eight-service
+              name: game-service
               port:
                 number: 80
