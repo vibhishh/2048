@@ -5,12 +5,12 @@ metadata:
   namespace: gamespace
 
 spec:
-  type: NodePort
   selector:
+    # Selector for Pods
     app: game-app
-
   ports:
-    - port: 80
-      targetPort: 80
-      nodePort: 30015
-      protocol: TCP
+    # Port Map
+  - port: 3000
+    targetPort: 3000
+    protocol: TCP
+  type: LoadBalancer
