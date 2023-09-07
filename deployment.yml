@@ -19,4 +19,4 @@ spec:
       - name: game-app
         image: mradulsingh25/2048-game
         ports:
-        - containerPort: 3000
+        - containerPort: 6000
