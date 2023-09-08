@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Build And Test") {
             steps {
-                sh 'docker build . -t /mradulsingh25/2048-game:latest'
+                sh 'docker build . -t mradulsingh25/2048-game:latest'
             }
         }
          stage("Login And push"){
