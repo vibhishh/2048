@@ -4,4 +4,4 @@ services:
     ports:
       - "6000:6000"
   ubuntu:
-  image:
+  image: "ubuntu:22.04"
