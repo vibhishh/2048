@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    ports:
+      - "6000:6000"
+  ubuntu:
+  image:
