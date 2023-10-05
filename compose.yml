@@ -1,7 +1,8 @@
+version: '3'
 services:
   web:
     build: .
     ports:
       - "80:80"
   ubuntu:
-  image: "ubuntu:22.04"
+    image: "ubuntu:22.04"
