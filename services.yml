@@ -10,7 +10,7 @@ spec:
     app: game-app
   ports:
     # Port Map
-  - port: 6000
-    targetPort: 6000
+  - port: 80
+    targetPort: 80
     protocol: TCP
   type: NodePort
